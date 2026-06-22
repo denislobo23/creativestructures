@@ -1,5 +1,4 @@
 import Link from "next/link";
-import ContactForm from "@/components/ContactForm";
 import { SERVICES } from "@/components/data";
 
 function Glyph() {
@@ -26,6 +25,7 @@ export default function SiteFooter() {
               Custom pergolas, patios, pavilions and louvred roofs — designed for your home and matched to a
               vetted maker, Australia-wide.
             </p>
+            <Link href="/#enquire" className="btn footer-cta">Start your project</Link>
           </div>
 
           <nav className="footer-nav" aria-label="Footer">
@@ -36,10 +36,6 @@ export default function SiteFooter() {
             ))}
             <Link href="/contact">Contact</Link>
           </nav>
-
-          <div className="footer-contact">
-            <ContactForm />
-          </div>
         </div>
 
         <div className="fine">
